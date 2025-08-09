@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/output.css">
+
+    <title>Auglaize County Historical Society - Home Page</title>
+</head>
+
+<body class="bg-silver-50 text-base-size text-midnight-950">
+    <header class="w-full px-4 py-3">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Left Links (Hidden on small screens) -->
+            <nav class="hidden md:flex gap-4">
+                <button class="h-12 w-12 flex items-center justify-center">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M9.539 15.23q-2.398 0-4.065-1.666Q3.808 11.899 3.808 9.5t1.666-4.065T9.539 3.77t4.064 1.666T15.269 9.5q0 1.042-.369 2.017t-.97 1.668l5.909 5.907q.14.14.15.345q.009.203-.15.363q-.16.16-.354.16t-.354-.16l-5.908-5.908q-.75.639-1.725.989t-1.96.35m0-1q1.99 0 3.361-1.37q1.37-1.37 1.37-3.361T12.9 6.14T9.54 4.77q-1.991 0-3.361 1.37T4.808 9.5t1.37 3.36t3.36 1.37"
+                                stroke-width="0.1" stroke="currentColor" />
+                        </svg>
+                    </span>
+                </button>
+                <a href="#"
+                    class="text-sm text-midnight-950 bg-lightning-300 rounded-md px-6 py-2 font-semibold h-12 w-auto flex items-center justify-center">Donate</a>
+            </nav>
+
+            <!-- Logo Text -->
+            <div
+                class="flex flex-col justify-center items-start gap-y-1 md:items-center text-left md:text-center w-full md:w-auto">
+                <a href="./index.html">
+                    <img src="./assets/achs_logo.png" alt="" srcset="">
+                </a>
+                <span class="hidden md:block text-silver-400 text-sm font-semibold">Telling Auglaize County’s history
+                    since 1963</span>
+            </div>
+
+            <!-- Right Links -->
+            <nav class="flex gap-4 justify-end">
+                <a href="#" class="text-midnight-950 h-12 w-12 flex items-center justify-center">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M7.308 21.116q-.633 0-1.067-.434t-.433-1.066t.433-1.067q.434-.433 1.067-.433t1.066.433t.434 1.067t-.434 1.066t-1.066.434m9.384 0q-.632 0-1.066-.434t-.434-1.066t.434-1.067q.434-.433 1.066-.433t1.067.433q.433.434.433 1.067q0 .632-.433 1.066q-.434.434-1.067.434M5.881 5.5l2.669 5.616h6.635q.173 0 .307-.087q.135-.087.231-.24l2.616-4.75q.115-.212.019-.375q-.097-.164-.327-.164zm-.489-1h13.02q.651 0 .98.532q.33.531.035 1.095l-2.858 5.208q-.217.365-.564.573t-.763.208H8.1l-1.215 2.23q-.154.231-.01.5t.433.27h10.384q.214 0 .357.143t.143.357t-.143.356t-.357.144H7.308q-.875 0-1.306-.738t-.021-1.482l1.504-2.68L3.808 3.5H2.5q-.213 0-.357-.143T2 3t.143-.357T2.5 2.5h1.433q.236 0 .429.121q.192.121.298.338zm3.158 6.616h7z"
+                                stroke-width="0.1" stroke="currentColor" />
+                        </svg>
+                    </span>
+                </a>
+                <a href="#" class="text-midnight-950 h-12 w-12 flex items-center justify-center">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256">
+                            <path fill="#1877f2"
+                                d="M256 128C256 57.308 198.692 0 128 0S0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"
+                                stroke-width="1" stroke="#1877f2" />
+                            <path fill="#fff"
+                                d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A129 129 0 0 0 128 256a129 129 0 0 0 20-1.555V165z"
+                                stroke-width="1" stroke="#fff" />
+                        </svg>
+                    </span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Light Blue Nav Section -->
+    <section class="bg-midnight-200 text-midnight-950 w-full px-4 py-3">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Search Button (mobile only) -->
+            <button class="block md:hidden text-midnight-950">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M9.539 15.23q-2.398 0-4.065-1.666Q3.808 11.899 3.808 9.5t1.666-4.065T9.539 3.77t4.064 1.666T15.269 9.5q0 1.042-.369 2.017t-.97 1.668l5.909 5.907q.14.14.15.345q.009.203-.15.363q-.16.16-.354.16t-.354-.16l-5.908-5.908q-.75.639-1.725.989t-1.96.35m0-1q1.99 0 3.361-1.37q1.37-1.37 1.37-3.361T12.9 6.14T9.54 4.77q-1.991 0-3.361 1.37T4.808 9.5t1.37 3.36t3.36 1.37"
+                            stroke-width="0.1" stroke="currentColor" />
+                    </svg>
+                </span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex flex-1 justify-center gap-10">
+                <a href="#" class="active font-semibold hover:font-semibold">Home</a>
+                <a href="#" class="hover:font-semibold">About Us</a>
+                <a href="#" class="hover:font-semibold">Locations</a>
+                <a href="#" class="hover:font-semibold">Historic</a>
+                <a href="#" class="hover:font-semibold">Archive</a>
+                <a href="#" class="hover:font-semibold">Store</a>
+                <a href="#" class="hover:font-semibold">Contacts</a>
+            </nav>
+
+            <!-- Mobile Menu -->
+            <nav id="mobile-nav-menu" class="hidden md:hidden absolute left-0 right-0 top-[132px] z-50 bg-midnight-100 text-midnight-950 flex flex-col items-center gap-4 px-4 py-4 shadow-lg transition-all duration-300 ease-in-out">
+                <a href="#" class="active font-semibold hover:font-semibold">Home</a>
+                <a href="#" class="hover:font-semibold">About Us</a>
+                <a href="#" class="hover:font-semibold">Locations</a>
+                <a href="#" class="hover:font-semibold">Historic</a>
+                <a href="#" class="hover:font-semibold">Archive</a>
+                <a href="#" class="hover:font-semibold">Store</a>
+                <a href="#" class="hover:font-semibold">Contacts</a>
+            </nav>
+
+
+
+            <!-- Hamburger Menu Button (mobile only) -->
+            <button class="block md:hidden text-midnight-950 cursor-pointer">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M4.5 17.27q-.213 0-.356-.145T4 16.768t.144-.356t.356-.143h15q.213 0 .356.144q.144.144.144.357t-.144.356t-.356.143zm0-4.77q-.213 0-.356-.144T4 11.999t.144-.356t.356-.143h15q.213 0 .356.144t.144.357t-.144.356t-.356.143zm0-4.77q-.213 0-.356-.143Q4 7.443 4 7.23t.144-.356t.356-.143h15q.213 0 .356.144T20 7.23t-.144.356t-.356.144z" stroke-width="0.1" stroke="currentColor" />
+                    </svg>
+                </span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Very light Blue Announcement Section -->
+    <section class="bg-midnight-50 text-midnight-950 w-full px-4 py-3 flex flex-row justify-between items-center">
+        <div class="max-w-7xl mx-auto flex-1 flex flex-row items-center justify-between">
+            <h5 id="announcement-wrappper" class="w-[75%] md:w-auto">
+                Exclusively this month, follow with us the celebration of the <a href="" class="underline font-semibold">Barn Project</a> in Auglaize County
+            </h5>
+            <button id="close-announcement-section-btn" class="h-6 w-6 text-midnight-950 flex items-center justify-center cursor-pointer">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="m8.054 16.673l-.727-.727L11.273 12L7.327 8.079l.727-.727L12 11.298l3.921-3.946l.727.727L12.702 12l3.946 3.946l-.727.727L12 12.727z" stroke-width="0.1" stroke="currentColor" />
+                    </svg>
+                </span>
+            </button>
+        </div>
+    </section>
+
+    <main id="main" class="flex flex-col gap-y-[5rem] w-full h-auto">
+        <section id="hero-section" class="max-w-7xl mx-auto flex flex-col gap-y-12 md:flex-row gap-6 w-full h-auto py-6">
+            <div id="second-level-articles-column" class="flex flex-row overflow-x-auto gap-4 w-full md:flex-col md:w-1/4 md:gap-y-6 h-auto px-2 snap-x snap-mandatory scroll-smooth">
+                <div class="second-level-article-preview-container w-100 md:w-full flex flex-row md:flex-col gap-2 items-start h-auto flex-shrink-0">
+                    <div class="article-preview-thumbnail-container w-full h-full aspect-video bg-silver-100"></div>
+                    <div class="flex flex-col w-auto h-auto gap-y-2">
+                        <div class="article-preview-title-container">
+                            <a class="article-preview-title font-semibold line-clamp-2 text-lg">Wapakoneta by Moonlight returns THIS Tuesday, July 15.</a>
+                        </div>
+                        <div class="article-preview-content-container">
+                            <p class="line-clamp-1 md:line-clamp-3">In addition to evening shopping, dining, and live music, don't miss  the Historical Society's Walking Tours: Learn about our rich local history with guided tours from Melissa Shroyer at 7 and 9 pm.  Tours begin at the northeast corner of the Courthouse block.  And check out the beautiful glow of moon-shaped Luminaria, gracing landmark buildings downtown.</p>
+                        </div>
+                        <div class="article-preview-datas-container flex flex-row gap-x-2 text-sm">
+                            <span class="text-silver-400">June 30th, 2025</span>
+                            <span class="text-silver-400">•</span>
+                            <span class="text-silver-400">News</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-level-article-preview-container w-full flex flex-row md:flex-col gap-2 items-start h-auto flex-shrink-0">
+                    <div class="article-preview-thumbnail-container w-full h-full aspect-video bg-silver-100"></div>
+                    <div class="flex flex-col w-auto h-auto gap-y-2">
+                        <div class="article-preview-title-container">
+                            <a class="article-preview-title font-semibold line-clamp-2 text-lg">Wapakoneta by Moonlight returns THIS Tuesday, July 15.</a>
+                        </div>
+                        <div class="article-preview-content-container">
+                            <p class="line-clamp-1 md:line-clamp-3">In addition to evening shopping, dining, and live music, don't miss  the Historical Society's Walking Tours: Learn about our rich local history with guided tours from Melissa Shroyer at 7 and 9 pm.  Tours begin at the northeast corner of the Courthouse block.  And check out the beautiful glow of moon-shaped Luminaria, gracing landmark buildings downtown.</p>
+                        </div>
+                        <div class="article-preview-datas-container flex flex-row gap-x-2 text-sm">
+                            <span class="text-silver-400">June 30th, 2025</span>
+                            <span class="text-silver-400">•</span>
+                            <span class="text-silver-400">News</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-1 flex flex-col w-auto h-full">
+                <div id="main-level-article-preview" class="w-full h-auto flex flex-col gap-y-4 px-5 md:px-0">
+                    <div id="other-main-articles-preview-container" class="w-full h-auto flex flex-row gap-x-2">
+                        <div class="w-auto h-auto aspect-square bg-silver-100 flex-1"></div>
+                        <div class="w-auto h-auto aspect-square bg-silver-100 flex-1"></div>
+                        <div class="w-auto h-auto aspect-square bg-silver-100 flex-1"></div>
+                        <div class="w-auto h-auto aspect-square bg-silver-100 flex-1"></div>
+                    </div>
+                    <div id="main-level-article-thumbnails-container" class="w-full h-auto aspect-video bg-silver-100 flex flex-row overflow-x-auto scroll-smooth">
+                        <div class="main-level-article-thumbnail-container w-full h-full shrink-0">1</div>
+                        <div class="main-level-article-thumbnail-container w-full h-full shrink-0">2</div>
+                        <div class="main-level-article-thumbnail-container w-full h-full shrink-0">3</div>
+                        <div class="main-level-article-thumbnail-container w-full h-full shrink-0">4</div>
+                        <div class="main-level-article-thumbnail-container w-full h-full shrink-0">5</div>
+                    </div>
+                    <div id="main-level-article-datas-container" class="w-full h-auto flex items-center justify-center text-sm">
+                        <span class="text-silver-400">June 30th, 2025</span>
+                        <span class="text-silver-400">•</span>
+                        <span class="text-silver-400">Event</span>
+                    </div>
+                    <div id="main-level-article-titles-container" class="w-full h-auto flex items-center justify-center text-sm">
+                        <h2 class="text-center line-clamp-2 text-2xl font-bold">Wapakoneta by Moonlight returns THIS Tuesday, July 15.</h2>
+                    </div>
+                    <div class="main-level-article-preview-content-container w-full h-auto flex items-center justify-center">
+                        <p id="main-level-article-content" class="line-clamp-3 text-center w-[90%]">In addition to evening shopping, dining, and live music, don't miss  the Historical Society's Walking Tours: Learn about our rich local history with guided tours from Melissa Shroyer at 7 and 9 pm.  Tours begin at the northeast corner of the Courthouse block.  And check out the beautiful glow of moon-shaped Luminaria, gracing landmark buildings downtown.</p>
+                    </div>
+                    <div id="main-level-article-carousel-ctas-container" class="w-full h-auto flex flex-row justify-between items-center">
+                        <button id="to-prev-article-btn" class="h-12 w-12 flex items-center justify-center rounded-md cursor-pointer text-midnight-950 disabled:opacity-50 disabled:cursor-not-allowed">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M14 17.308L8.692 12L14 6.692l.708.708l-4.6 4.6l4.6 4.6z" stroke-width="0.1" stroke="currentColor" />
+                                </svg>
+                            </span>
+                        </button>
+                        <a href="" class="capitalize font-semibold h-12 px-5 bg-midnight-950 text-silver-50 flex items-center justify-center rounded-md">
+                            <span>Read this article</span>
+                        </a>
+                        <button id="to-next-article-btn" class="h-12 w-12 flex items-center justify-center rounded-md cursor-pointer text-midnight-950 disabled:opacity-50 disabled:cursor-not-allowed">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="m13.292 12l-4.6-4.6l.708-.708L14.708 12L9.4 17.308l-.708-.708z" stroke-width="0.1" stroke="currentColor" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col overflow-x-auto gap-4 w-full md:flex-col md:w-1/4 md:gap-y-6 h-auto px-2">
+                <div id="third-level-articles-column" class="w-full h-auto flex flex-row gap-x-6 md:flex-col md:gap-y-6 overflow-x-auto">
+                    <div class="third-level-article-preview-container w-full h-auto rounded flex flex-row gap-x-2">
+                        <div class="article-preview-thumbnail-container h-18 aspect-square bg-silver-100"></div>
+                        <div class="flex flex-col justify-between gap-y-2 w-60">
+                            <div class="article-preview-title-container">
+                                <a href="" class="article-preview-title font-semibold line-clamp-2 text-sm">Wapakoneta by Moonlight returns THIS Tuesday, July 15.</a>
+                            </div>
+                            <div class="article-preview-content-container">
+                                <p class="line-clamp-1 text-sm">In addition to evening shopping, dining, and live music, don't miss  the Historical Society's Walking Tours: Learn about our rich local history with guided tours from Melissa Shroyer at 7 and 9 pm.  Tours begin at the northeast corner of the Courthouse block.  And check out the beautiful glow of moon-shaped Luminaria, gracing landmark buildings downtown.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="third-level-article-preview-container w-full h-auto rounded flex flex-row gap-x-2">
+                        <div class="article-preview-thumbnail-container h-18 aspect-square bg-silver-100"></div>
+                        <div class="flex flex-col justify-between gap-y-2 w-auto flex-1">
+                            <div class="article-preview-title-container">
+                                <a href="" class="article-preview-title font-semibold line-clamp-2 text-sm">Wapakoneta by Moonlight returns THIS Tuesday, July 15.</a>
+                            </div>
+                            <div class="article-preview-content-container">
+                                <p class="line-clamp-1 text-sm">In addition to evening shopping, dining, and live music, don't miss  the Historical Society's Walking Tours: Learn about our rich local history with guided tours from Melissa Shroyer at 7 and 9 pm.  Tours begin at the northeast corner of the Courthouse block.  And check out the beautiful glow of moon-shaped Luminaria, gracing landmark buildings downtown.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="third-level-article-preview-container w-full h-auto rounded flex flex-row gap-x-2">
+                        <div class="article-preview-thumbnail-container h-18 aspect-square bg-silver-100"></div>
+                        <div class="flex flex-col justify-between gap-y-2 w-auto flex-1">
+                            <div class="article-preview-title-container">
+                                <a href="" class="article-preview-title font-semibold line-clamp-2 text-sm">Wapakoneta by Moonlight returns THIS Tuesday, July 15.</a>
+                            </div>
+                            <div class="article-preview-content-container">
+                                <p class="line-clamp-1 text-sm">In addition to evening shopping, dining, and live music, don't miss  the Historical Society's Walking Tours: Learn about our rich local history with guided tours from Melissa Shroyer at 7 and 9 pm.  Tours begin at the northeast corner of the Courthouse block.  And check out the beautiful glow of moon-shaped Luminaria, gracing landmark buildings downtown.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="third-level-article-preview-container w-full h-auto rounded flex flex-row gap-x-2">
+                        <div class="article-preview-thumbnail-container h-18 aspect-square bg-silver-100"></div>
+                        <div class="flex flex-col justify-between gap-y-2 w-auto flex-1">
+                            <div class="article-preview-title-container">
+                                <a href="" class="article-preview-title font-semibold line-clamp-2 text-sm">Wapakoneta by Moonlight returns THIS Tuesday, July 15.</a>
+                            </div>
+                            <div class="article-preview-content-container">
+                                <p class="line-clamp-1 text-sm">In addition to evening shopping, dining, and live music, don't miss  the Historical Society's Walking Tours: Learn about our rich local history with guided tours from Melissa Shroyer at 7 and 9 pm.  Tours begin at the northeast corner of the Courthouse block.  And check out the beautiful glow of moon-shaped Luminaria, gracing landmark buildings downtown.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-auto h-auto p-5 md:p-0">
+                    <div id="quote-square-container" class="w-full h-auto aspect-square border relative flex flex-col justify-between items-center p-5">
+                        <div id="quote-square-ornaments-container" class="flex flex-row gap-x-2 items-center justify-center z-1 w-[80%] h-auto">
+                            <span class="quote-square-line w-auto h-0.5 flex-1 bg-lightning-300"></span>
+                            <span class="text-lightning-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="m7.012 16.558l1.969-3.424q-.173.097-.404.135t-.461.039q-1.4 0-2.354-.973q-.954-.974-.954-2.335q0-1.4.954-2.354t2.354-.954q1.361 0 2.334.954T11.423 10q0 .479-.118.899t-.336.793l-3.098 5.366q-.067.11-.177.18t-.25.07q-.286 0-.43-.25t-.002-.5m8.769 0l1.969-3.423q-.173.096-.404.134t-.461.039q-1.4 0-2.354-.973T13.577 10q0-1.42.954-2.363t2.354-.945q1.361 0 2.334.954T20.192 10q0 .479-.118.899t-.335.793l-3.099 5.366q-.067.11-.177.18t-.25.07q-.286 0-.43-.25t-.002-.5" stroke-width="0.1" stroke="currentColor" />
+                                </svg>
+                            </span>
+                            <span class="quote-square-line w-auto flex-1 h-0.5 bg-lightning-300"></span>
+                        </div>
+                        <div id="quote-content-container" class="z-1 w-[90%]">
+                            <p class="text-silver-50 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iure deleniti consequuntur quod maxime illo saepe vitae corporis, quasi rerum quis ullam iusto odit nemo quae temporibus! Voluptate, facilis! Debitis!</p>
+                        </div>
+                        <div id="quote-author-container" class="z-1">
+                            <h5 id="quote-author" class="capitalize text-white text-lg">A Beloved Author</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hebdo-section" class="max-w-7xl mx-auto flex flex-col gap-y-6 w-full h-auto">
+            <div id="hebdo-section-header" class="section-header flex flex-row w-full h-auto items-center border-b-2 border-midnight-950">
+                <div class=" bg-midnight-950 w-auto px-5 py-2 h-full text-silver-50 uppercase flex flex-row items-center justify-center">
+                    <span class="leading-0 text-base">This week in auglaize county</span>
+                </div>
+            </div>
+            <div id="hebdo-section-body" class="section-body flex flex-row flex-wrap sm:flex-nowrap gap-4 sm:gap-x-4 sm:gap-y-0 px-5 md:px-0">
+                <div class="hebdo-article-container w-full sm:w-auto h-auto aspect-[3/4] sm:aspect-[3/4] flex flex-col gap-y-2">
+                    <div class="hebdo-article-thumbnail-container w-full h-[75%] bg-silver-100"></div>
+                    <div class="hebdo-article-title-container">
+                        <a class="hebdo-article-title font-semibold line-clamp-2 text-xl">Wapakoneta by Moonlight returns THIS Tuesday, July 15.</a>
+                    </div>
+                    <div class="hebdo-article-datas-container flex flex-row gap-x-2 text-silver-400 text-sm">
+                        <span>Mon. July 13th, 2025</span>
+                    </div>
+                </div>
+                <div class="hebdo-article-container w-full sm:w-auto h-auto aspect-[3/4] sm:aspect-[3/4] flex flex-col gap-y-2">
+                    <div class="hebdo-article-thumbnail-container w-full h-[75%] bg-silver-100"></div>
+                    <div class="hebdo-article-title-container">
+                        <a class="hebdo-article-title font-semibold line-clamp-2 text-xl">Wapakoneta by Moonlight returns THIS Tuesday, July 15.</a>
+                    </div>
+                    <div class="hebdo-article-datas-container flex flex-row gap-x-2 text-silver-400 text-sm">
+                        <span>Mon. July 13th, 2025</span>
+                    </div>
+                </div>
+                <div class="hebdo-article-container w-full sm:w-auto h-auto aspect-[3/4] sm:aspect-[3/4] flex flex-col gap-y-2">
+                    <div class="hebdo-article-thumbnail-container w-full h-[75%] bg-silver-100"></div>
+                    <div class="hebdo-article-title-container">
+                        <a class="hebdo-article-title font-semibold line-clamp-2 text-xl">Wapakoneta by Moonlight returns THIS Tuesday, July 15.</a>
+                    </div>
+                    <div class="hebdo-article-datas-container flex flex-row gap-x-2 text-silver-400 text-sm">
+                        <span>Mon. July 13th, 2025</span>
+                    </div>
+                </div>
+                <div class="hebdo-article-container w-full sm:w-auto h-auto aspect-[3/4] sm:aspect-[3/4] flex flex-col gap-y-2">
+                    <div class="hebdo-article-thumbnail-container w-full h-[75%] bg-silver-100"></div>
+                    <div class="hebdo-article-title-container">
+                        <a class="hebdo-article-title font-semibold line-clamp-2 text-xl">Wapakoneta by Moonlight returns THIS Tuesday, July 15.</a>
+                    </div>
+                    <div class="hebdo-article-datas-container flex flex-row gap-x-2 text-silver-400 text-sm">
+                        <span>Mon. July 13th, 2025</span>
+                    </div>
+                </div>
+                <div class="hebdo-article-container w-full sm:w-auto h-auto aspect-[3/4] sm:aspect-[3/4] flex flex-col gap-y-2">
+                    <div class="hebdo-article-thumbnail-container w-full h-[75%] bg-silver-100"></div>
+                    <div class="hebdo-article-title-container">
+                        <a class="hebdo-article-title font-semibold line-clamp-2 text-xl">Wapakoneta by Moonlight returns THIS Tuesday, July 15.</a>
+                    </div>
+                    <div class="hebdo-article-datas-container flex flex-row gap-x-2 text-silver-400 text-sm">
+                        <span>Mon. July 13th, 2025</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="promotion-section" class="max-w-7xl mx-auto flex flex-col gap-y-6 w-full h-auto px-4">
+            <div id="barn-promotion-container" class="w-full min-h-[40vh] relative flex flex-col items-center justify-center text-center gap-y-4 px-4 py-8 md:py-16 bg-cover bg-center" style="background-image: url('./assets/daniel-akselrod-drWxp4djCYk-unsplash.jpg');">
+                <div class="absolute inset-0 bg-black/40 z-0"></div>
+                <span class="uppercase text-lightning-300 z-1 tracking-widest font-semibold py-0.5 border-b-2 border-lightning-300">Culture</span>
+                <div class="z-1">
+                    <h4 id="promotion-title" class="text-silver-50 text-2xl md:text-4xl font-semibold z-10 leading-snug max-w-2xl">The Barn Project</h4>
+                </div>
+                <div class="z-1 text-silver-50 h-auto w-[70%] flex items-center justify-center">
+                    <p class="text-silver-50 text-base text-center md:text-lg z-10 max-w-2xl leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus labore eos corrupti repellat repellendus recusandae laborum enim. Et magni odit adipisci aut deleniti distinctio asperiores temporibus, at ipsam accusantium.</p>
+                </div>
+                <a href="http://" class="z-10 text-midnight-950 px-6 h-12 flex items-center rounded-md bg-midnight-300 hover:bg-lightning-400 transition font-semibold capitalize text-sm md:text-base">Submit your creation</a>
+            </div>
+            <div class="w-full text-sm italic flex flex-col sm:flex-row justify-between items-center gap-y-2 sm:gap-x-4 text-silver-600 px-4">
+                <span>1856 people are participating</span>
+                <span class="hidden sm:inline">•</span>
+                <span>62 days left</span>
+            </div>
+
+        </section>
+    </main>
+
+    <script type="module" src="./src/javascripts/main.js"></script>
+</body>
+
+</html>

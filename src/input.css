@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --base-size: 0.9rem;
+    --scale: 1.2;
+    --body-font: 'League Spartan', sans-serif;
+    --title-font: 'Libre Caslon Text', cursive;
+
+    --color-midnight-50: #eef9ff;
+    --color-midnight-100: #d9f1ff;
+    --color-midnight-200: #bbe8ff;
+    --color-midnight-300: #8cdbff;
+    --color-midnight-400: #55c4ff;
+    --color-midnight-500: #2ea7ff;
+    --color-midnight-600: #1789f9;
+    --color-midnight-700: #1070e5;
+    --color-midnight-800: #145ab9;
+    --color-midnight-900: #174d91;
+    --color-midnight-950: #14335e;
+
+    --color-lightning-50: #fffaeb;
+    --color-lightning-100: #fff0c6;
+    --color-lightning-200: #ffdf88;
+    --color-lightning-300: #ffc439;
+    --color-lightning-400: #ffb320;
+    --color-lightning-500: #f99007;
+    --color-lightning-600: #dd6902;
+    --color-lightning-700: #b74806;
+    --color-lightning-800: #94360c;
+    --color-lightning-900: #7a2e0d;
+    --color-lightning-950: #461602;
+
+    --color-silver-50: #f7f7f7;
+    --color-silver-100: #ededed;
+    --color-silver-200: #dfdfdf;
+    --color-silver-300: #c4c4c4;
+    --color-silver-400: #adadad;
+    --color-silver-500: #999999;
+    --color-silver-600: #888888;
+    --color-silver-700: #7b7b7b;
+    --color-silver-800: #676767;
+    --color-silver-900: #545454;
+    --color-silver-950: #363636;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+}
+
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+}
+
+
+#second-level-articles-column .article-preview-title, 
+#third-level-articles-column .article-preview-title, 
+#quote-author,
+#main-level-article-titles-container h2,
+#promotion-title,
+.section-header h6,
+.hebdo-article-title,
+#article-title-container h2,
+#article-author-name,
+.article-page-related-article-title-container h5,
+#first-letter {
+    font-family: var(--title-font);
+}
+
+#quote-square-container{
+    background-image: url('../assets/quote-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#quote-square-container::after,
+#barn-promotion-container::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: var(--color-midnight-950);
+    opacity: 80%;
+
+    z-index: 0;
+}
+
+#main-level-article-thumbnails-container::-webkit-scrollbar,
+#second-level-articles-column::-webkit-scrollbar,
+#third-level-articles-column::-webkit-scrollbar,
+#article-page-related-articles-container::-webkit-scrollbar{
+    display: none;
+}
+
+#barn-promotion-container::after{
+    opacity: 70%;
+    background: linear-gradient(90deg,rgba(20, 51, 94, 1) 0%, rgba(83, 152, 237, 0.4) 100%);
+}
+
+.article-paragraph p{
+    font-size: 1.1rem;
+}
+
+.article-paragraph p a{
+    text-decoration: underline;
+    font-weight: 700;
+}
